@@ -1,10 +1,14 @@
 {
   "name": "sarajiang-ui",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "a react ui library",
+  "keywords": [
+    "react",
+    "ui",
+    "library"
+  ],
   "license": "ISC",
-  "author": "",
+  "author": "sarajiang",
   "main": "lib/index.js",
   "module": "esm/index.js",
   "typings": "lib/index.d.ts",
