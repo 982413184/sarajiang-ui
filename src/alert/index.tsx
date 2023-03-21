@@ -3,8 +3,8 @@ import React from 'react';
 
 export interface AlertProps {
   /**
-   * @description Alert 的类型
-   * @default
+   * @description 属性描述
+   * @default "默认值"
    */
   children: any;
   kind?: 'info' | 'positive' | 'negative' | 'warning';

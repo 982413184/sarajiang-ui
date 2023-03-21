@@ -18,4 +18,4 @@ group:
 
 <code src="./demo/basic.tsx"></code>
 
-<API src="./index.tsx"></API>
+<API id="Alert"></API>

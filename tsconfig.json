@@ -11,8 +11,11 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "@@/*": [".dumi/tmp/*"]
+    }
   },
-  "include": ["src", "/**/*.ts"],
+  "include": ["src", "/**/*.ts", ".dumi/**/*"],
   "exclude": ["node_modules", "lib", "esm", "dist", "typings"]
 }
