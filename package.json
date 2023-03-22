@@ -7,11 +7,15 @@
     "ui",
     "library"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "author": "sarajiang",
   "main": "lib/index.js",
   "module": "esm/index.js",
   "typings": "lib/index.d.ts",
+  "files": [
+    "esm",
+    "lib"
+  ],
   "scripts": {
     "build": "npm run clean && npm run build:types && gulp",
     "build:site": "rimraf doc-site && dumi build",
@@ -20,7 +24,9 @@
     "commit": "git-cz",
     "deploy:site": "npm run build:site && gh-pages -d doc-site",
     "dev": "dumi dev",
+    "new": "plop --plopfile ./scripts/plopfile.ts",
     "preview:site": "cross-env SITE_BUILD_ENV=PREVIEW npm run build:site && serve doc-site",
+    "release": "np --no-cleanup --no-tests --any-branch --no-2fa",
     "start": "npm run dev",
     "test": ""
   },
@@ -58,6 +64,7 @@
     "@babel/preset-typescript": "^7.21.0",
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
+    "@types/node": "^18.15.5",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@umijs/fabric": "^2.14.1",
@@ -74,11 +81,14 @@
     "gulp-less": "^5.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
+    "np": "^7.6.4",
+    "plop": "^3.1.2",
     "prettier": "^2.8.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^4.4.0",
     "serve": "^14.2.0",
+    "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   }
 }
