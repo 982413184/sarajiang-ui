@@ -1,10 +1,14 @@
 import React from 'react';
 export interface AlertProps {
     /**
-     * @description 属性描述
+     * @description Alert的内容
      * @default "默认值"
      */
     children: any;
+    /**
+     * @description Alert的类型
+     * @default "info"
+     */
     kind?: 'info' | 'positive' | 'negative' | 'warning';
 }
 export type KindMap = Record<Required<AlertProps>['kind'], string>;

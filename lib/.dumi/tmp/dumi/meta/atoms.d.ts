@@ -20,6 +20,12 @@ export declare const components: {
                 kind: {
                     type: string;
                     enum: string[];
+                    description: string;
+                    tags: {
+                        description: string;
+                        default: string;
+                    };
+                    default: string;
                 };
             };
         };

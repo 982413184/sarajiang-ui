@@ -5,7 +5,7 @@ import t from 'prop-types';
 import React from 'react';
 var prefixCls = 'sarajiang-alert';
 var kinds = {
-  info: '#5352ED',
+  info: '#909399',
   positive: '#2ED573',
   negative: '#FF4757',
   warning: '#FFA502'

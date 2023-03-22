@@ -41,7 +41,6 @@ export declare function getRoutes(): Promise<{
             readonly id: "demo-render";
             readonly path: "~demos/:id";
             readonly parentId: "dumi-context-layout";
-            readonly prerender: false;
         };
     };
     routeComponents: {
