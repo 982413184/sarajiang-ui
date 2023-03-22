@@ -12,7 +12,7 @@ const paths = {
     dist: 'dist',
   },
   styles: 'src/**/*.less',
-  scripts: ['src/**/*.{ts,tsx}', '!src/**/demo/*.{ts,tsx}', '!src/**/__tests__/*.{ts,tsx}'],
+  scripts: ['src/**/*.{ts,tsx}'],
 };
 
 /**

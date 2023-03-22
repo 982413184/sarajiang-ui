@@ -11,6 +11,9 @@ if (process.env.SITE_BUILD_ENV === 'PREVIEW') {
 export default defineConfig({
   title: 'SARAJIANG UI',
   outputPath: 'doc-site',
+  themeConfig: {
+    name: 'sarajiang-ui',
+  },
   exportStatic: {}, // 后续会部署到 github pages 直接全部生成静态页面 不走前端路由
   base,
   publicPath,
