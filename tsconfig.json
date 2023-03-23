@@ -16,6 +16,6 @@
       "@@/*": [".dumi/tmp/*"]
     }
   },
-  "include": ["src", "/**/*.ts", ".dumi/**/*"],
+  "include": ["src", "/**/*.ts", ".dumi/**/*", "scripts/*.ts"],
   "exclude": ["node_modules", "lib", "esm", "dist", "typings"]
 }
